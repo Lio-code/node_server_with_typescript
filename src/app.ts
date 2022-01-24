@@ -10,6 +10,7 @@ app.use(json());
 //server will use todos routes at url "/todos"
 app.use('/todos', todoRoutes);
 
+//Error handling
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   res.status(500).json({ message: err.message });
 });

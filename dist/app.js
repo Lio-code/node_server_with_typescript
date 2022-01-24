@@ -10,6 +10,7 @@ const app = (0, express_1.default)();
 app.use((0, body_parser_1.json)());
 //server will use todos routes at url "/todos"
 app.use('/todos', todos_1.default);
+//Error handling
 app.use((err, req, res, next) => {
     res.status(500).json({ message: err.message });
 });
