@@ -1,13 +1,14 @@
 ## Project description
 
-This project create a node js server with express framework and support for typescript.
+This project creates a node js server with the express framework and typescript.
 
 ## Dependencies
 
 express
 body-parser
 
-#dev dependencies
+## dev dependencies
+
 @types/express
 @types/node
 
